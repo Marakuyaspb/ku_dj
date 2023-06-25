@@ -3,5 +3,13 @@ from django.http import HttpResponse
 
 # MAIN PAGE
 
+
 def index(request):
-	return HttpResponse('<h1>Главная</h1>')
+	return render(request, 'main/index.html')
+
+# def contact(request):
+	# return render(request, 'main/contact.html')
+
+
+def index_lections(request):
+	return render(request, 'lection/index.html')
