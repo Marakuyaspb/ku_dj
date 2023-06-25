@@ -17,13 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from main import views
-from article import views
-from lection import views
+# from article import views
+# from lection import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main', views.index),
+    path('', include('main.urls')),
     # path('cotact', views.contact),
-    path('article/', views.index_articles),
-    path('lection/', views.index_lections),
+    # path('article/', views.index_articles),
+    # path('lection/', views.index_lections),
 ]
