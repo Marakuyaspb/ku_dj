@@ -4,18 +4,65 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 .very_big_h{
-	font-size: 4em;
+	font-size: 6em;
+	font-weight: 600;
 }
-.navbar{
-	padding-top: 0!important;
+
+.main_lable{
+	padding-top: 8em;
+	padding-left: 14em;
 }
+
 .main_cover {
 	z-index: -2;
-	margin-top: -18em;
+	margin-top: -25em;
 	position: relative;
 	min-width: 100%!important;
 	height: auto;
 }
+.main_cover_mob {
+	z-index: -2;
+	margin-top: -20em;
+	position: relative;
+	width: 100%!important;
+	height: auto;
+}
+.main_title_mob{
+	padding-top: 8em;
+	font-weight: 600;
+}
+
+.sub_logo{
+	font-weight: 600;
+	
+}
+
 .white_text{
 	color: #FFF5E9!important;
+}
+
+/* BOOTSTRUP CHANGED */
+
+.bg-dark{
+	background-color: #151414 !important;
+}
+.btn-outline-secondary{
+	background-color: #EFE7D4;
+}
+.btn-outline-secondary:hover{
+	background-color: #f7ebcd!important;
+	color: #565859!important;
+}
+a{
+	text-decoration: none!important;
+}
+a:hover{
+	color: #f7ebcd!important;
+}
+a:active{
+	color: #F6C660!important;
+}
+
+.navbar-light .navbar-toggler-icon{
+	background-image: url("https://kulik.spb.ru/static/img/burger.png");
 }
