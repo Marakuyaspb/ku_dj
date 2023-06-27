@@ -7,9 +7,6 @@ from django.http import HttpResponse
 def index(request):
 	return render(request, 'main/index.html')
 
-# def contact(request):
-	# return render(request, 'main/contact.html')
+def contact(request):
+	return render(request, 'main/contact.html')
 
-
-def index_lections(request):
-	return render(request, 'lection/index.html')
