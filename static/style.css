@@ -3,10 +3,24 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 }
+p {
+	font-size: 1.1em;
+}
+.big_fields_text{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .very_big_h{
 	font-size: 6em;
 	font-weight: 600;
 }
+.sub_logo{
+	font-weight: 600;
+}
+
+
 
 .main_lable{
 	padding-top: 8em;
@@ -32,14 +46,19 @@ body{
 	font-weight: 600;
 }
 
-.sub_logo{
-	font-weight: 600;
-	
-}
+
+
+
+
+/* COLORS */
 
 .white_text{
 	color: #FFF5E9!important;
 }
+
+
+
+
 
 /* BOOTSTRUP CHANGED */
 
