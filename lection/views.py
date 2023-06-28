@@ -5,4 +5,4 @@ from .models import Lection
 
 def index_lections(request):
 	lections = Lection.objects.all()
-	return render(request, 'main/index_lections.html', {'lections': lections}) 
+	return render(request, 'main/index_lections.html', {'lections': lection}) 

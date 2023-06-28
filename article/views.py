@@ -3,6 +3,6 @@ from django.shortcuts import render
 # ARTICLES
 
 def index_articles(request):
-
-	
-	return render(request, 'article/single_page.html', {})
+	#articles = Article.objects.all()	
+	#return render(request, 'main/index_articles.html', {'articless': article})
+	return render(request, 'main/index_articles.html', {})

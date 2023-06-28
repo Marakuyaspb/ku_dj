@@ -1,0 +1,26 @@
+{% extends 'main/just_page.html' %}
+
+
+{% block content %}
+<!-- MAIN CONTENT -->
+	<div class="big_fields_text mt-4">
+		<h1 class="mb-4">Статьи</h1>
+
+	{% if articles %}
+
+		{% for el in lections %}
+		<div class="my-3">
+				<h4>{{ el.article_title }}</h4>
+		</div>
+		{% endfor %}
+
+		{% else %}
+			<h4>Статьи потерялись</h4>
+
+	{% endif %}
+
+	</div>
+	
+{% endblock %}
+
+
