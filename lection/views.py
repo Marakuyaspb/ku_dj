@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-# LECTIONS
+# LECTION SINGLE PAGE
 
 def index_lections(request):
-	return render(request, 'lection/index.html')
+	return render(request, 'main/index_lections.html') 
