@@ -8,19 +8,19 @@
 
 	{% if articles %}
 
-		{% for el in lections %}
+		{% for el in articles %}
 		<div class="my-3">
-				<h4>{{ el.article_title }}</h4>
+			<h4>{{ el.article_title }}</h4>
+			<p> {{ el.article_category }}</p>
 		</div>
 		{% endfor %}
-
 		{% else %}
 			<h4>Статьи потерялись</h4>
 
 	{% endif %}
 
 	</div>
-	
+
 {% endblock %}
 
 
