@@ -2,18 +2,23 @@
 
 
 {% block content %}
-<!-- MAIN CONTENT -->
+
 	<div class="big_fields_text mt-4">
 		<h1 class="mb-4">Статьи</h1>
 	</div>
-
-	{% for el in articles %}
-	<div class=" big_fields_text my-3">
-		<h4>{{ el.article_title }}</h4>
-		<p class = 'small_text'> {{ el.article_category }}</p>
-		<p> {{ article_annotation }} </p>
-	</div>
-	{% endfor %}
+	{% if articles %}
+		{% for el in articles %}
+			<hr>
+			<div class="big_fields_text mt-3">
+				<p class ='sub_logo'>{{ el.article_title }}</p>
+				<p class = 'small_text'> {{ el.article_category }}</p>
+				<p> {{ el.article_annotation }}..</p>
+				<a href = "{% url 'single_article' el.id %}">Читать дальше...</a>
+			</div>
+		{% endfor %}
+	{% else %}
+		<p>Статьи потерялись :( </p>
+	{% endif %}
 
 {% endblock %}
 
