@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "/path/to/dj/media/"
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -55,6 +59,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'dj.urls'
+
 
 TEMPLATES = [
     {
