@@ -2,15 +2,15 @@ from django import forms
 from .models import *
 
 
-class Lection_categories(forms.ModelForm):
-	def __init__(self, *args, **kwargs):
-		super().__init__(*args, **kwargs)
-		self.fields['cat'].empty_label = "Выбрать категорию"
+# class Lection_categories(forms.ModelForm):
+# 	def __init__(self, *args, **kwargs):
+# 		super().__init__(*args, **kwargs)
+# 		self.fields['cat'].empty_label = "Выбрать категорию"
 
 
-	class Meta:
-		model = Lection
-		fields = ['lection_title','lection_annotation','lection_header']
+# 	class Meta:
+# 		model = Lection
+# 		fields = ['lection_title','lection_annotation','lection_header']
 
 	# CATEGORIES = (
 	# 	('1', 'Первая мировая война'),

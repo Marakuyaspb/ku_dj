@@ -4,16 +4,22 @@
 {% block content %}
 
 	<div class="big_fields_text mt-4">
-		<h1 class="mb-4">Статьи</h1>
+		<h1 class="mb-2">Статьи</h1>
 	</div>
-	{% if articles %}
-		{% for el in articles %}
-			<hr>
-			<div class="big_fields_text mt-3">
-				<p class ='sub_logo'>{{ el.article_title }}</p>
+	{% if article %}
+		{% for el in article %}
+			<br><br>
+			<div class="big_fields_text my-3">
+				{{ quillpost.article }}
+				<br>
+				{{ quillpost.article_category }}
+				<!-- {{ article_category }} -->
+
+				<!-- <p class ='sub_logo'>{{ el.article_title }}</p>
 				<p class = 'small_text'> {{ el.article_category }}</p>
-				<p> {{ el.article_annotation }}..</p>
-				<a href = "{% url 'single_article' el.id %}">Читать дальше...</a>
+				<p> {{ el.article_annotation }}</p> -->
+
+				<a href = "{% url 'single_article' el.id %}" class = 'small_text'>ЧИТАТЬ ДАЛЬШЕ...</a>
 			</div>
 		{% endfor %}
 	{% else %}

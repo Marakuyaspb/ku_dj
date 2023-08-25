@@ -67,6 +67,9 @@ p {
 .orange_text{
 	color: #E06030!important;
 }
+.red_text{
+	color: #E4150B!important;
+}
 
 
 
@@ -83,13 +86,14 @@ p {
 	background-color: #f7ebcd!important;
 	color: #565859!important;
 }
-a{
+a {
+	color: #E4150B; /* red */
 	text-decoration: none!important;
 }
-a:hover{
-	color: #f7ebcd!important;
+a:hover {
+	color: #E06030!important;
 }
-a:active{
+a:active {
 	color: #F6C660!important;
 }
 
