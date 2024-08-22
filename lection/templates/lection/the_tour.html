@@ -1,0 +1,17 @@
+{% extends 'lection/base.html' %}
+{% load static %}
+
+
+{% block content %}
+	<img src='{{ tour.img }}'>
+
+	<h1 class='tour_h1'>{{ tour.title }}</h1>
+
+	<p>{{ tour.annotation }}</p>
+
+
+{% endblock %}
+
+
+{% block tour_another %}
+{% endblock %}

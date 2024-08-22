@@ -1,0 +1,17 @@
+{% extends 'lection/base.html' %}
+{% load static %}
+
+
+{% block content %}
+	<img src='{{ lection.img }}'>
+
+	<h1 class='lection_h1'>{{ lection.title }}</h1>
+
+	<p>{{ lection.annotation }}</p>
+
+
+{% endblock %}
+
+
+{% block lection_another %}
+{% endblock %}

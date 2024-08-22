@@ -1,0 +1,21 @@
+{% extends 'lection/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="big_fields_text mt-4">
+
+		<h1 class="mb-4">Экскурсии</h1>
+
+		{% for el_t in tours %}
+		<div class="big_fields_text my-3">
+			<ul>
+				<li>{{ el_t.tour_title }}</li>
+			</ul>
+		</div>
+		{% endfor %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:wght@100..900&family=Russo+One&display=swap');
+
+html{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+	font-size: 1.1em;
+}
+a {
+  text-decoration: none!important;
+}
+
+.big_fields_text{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.very_big_h{
+	font-size: 6em;
+	font-weight: 600;
+}
+.sub_logo{
+	font-weight: 600;
+}
+.small_text{
+	font-size: .8em;
+	font-weight: 100;
+}
+
+
+.main_lable{
+	padding-top: 8em;
+	padding-left: 14em;
+}
+
+.main_cover {
+	z-index: -2;
+	margin-top: -25em;
+	position: relative;
+	min-width: 100%!important;
+	height: auto;
+	filter: brightness(60%);
+}
+.main_cover_mob {
+	z-index: -2;
+	margin-top: -20em;
+	position: relative;
+	width: 100%!important;
+	height: auto;
+	filter: brightness(60%);
+}
+.main_title_mob{
+	padding-top: 8em;
+	font-weight: 600;
+}
+
+
+
+
+
+/* COLORS */
+
+.white_text{
+	color: #FFF5E9!important;
+}
+.sand_text{
+	color: #E4AF7D!important;
+}
+.yellow_text{
+	color: #F6C660!important;
+}
+.orange_text{
+	color: #E06030!important;
+}
+.red_text{
+	color: #E4150B!important;
+}
+
+
+
+
+/* BOOTSTRUP CHANGED */
+
+.bg-dark{
+	background-color: #151414 !important;
+}
+.btn-outline-secondary{
+	background-color: #EFE7D4;
+}
+.btn-outline-secondary:hover{
+	background-color: #f7ebcd!important;
+	color: #565859!important;
+}
+a {
+	color: #E4150B; /* red */
+	text-decoration: none!important;
+}
+a:hover {
+	color: #E06030!important;
+}
+a:active {
+	color: #F6C660!important;
+}
+
+.navbar-light .navbar-toggler-icon{
+	background-image: url("https://kulik.spb.ru/static/img/burger.png");
+}

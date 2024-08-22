@@ -1,0 +1,82 @@
+{% extends 'lection/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- DESCTOP HEADER START -->
+	<div class='d-none d-md-block d-lg-block d-xl-block d-xxl-block'>
+		<div class='row'>
+			<div class='col'>
+				<div class = 'main_lable'>
+					<h1 class='white_text very_big_h text-start'>АНДРЕЙ</h1>
+					<h1 class='white_text very_big_h text-start'>КУЛИК</h1>
+				</div>
+			</div>
+
+			<div class='col ms-5 main_lable'>
+				<div class="d-flex flex-row my-4">
+					<img src='https://kulik.spb.ru/static/img/polygon.png' class='pb-3 pe-3'>
+					<h3 class='white_text'>Авторские экскурсии</h3>
+				</div>
+				<div class="d-flex flex-row my-4">
+					<img src='https://kulik.spb.ru/static/img/rectangle_orange.png' class='pb-3 pe-3'>
+					<h3 class='white_text'>Научно-популярные лекции</h3>
+				</div>
+				<div class="d-flex flex-row my-4">
+					<img src='https://kulik.spb.ru/static/img/ellipse.png' class='pb-3 pe-3'>
+					<h3 class='white_text'>Экспертиза</h3>
+				</div>
+			</div>
+		</div>
+		<img src="https://kulik.spb.ru/static/img/suprem_img/main_cover.jpg" class='main_cover'>
+	</div>
+<!-- DESCTOP HEADER END -->
+
+<!-- MOBILE HEADER START -->
+	<div class='d-block d-md-none'>
+		<center>
+		<h1 class='white_text main_title_mob'>АНДРЕЙ КУЛИК</h1>
+		</center>
+			<img src="https://kulik.spb.ru/static/img/suprem_img/main_cover_mob.jpg" class='main_cover_mob'>
+
+		<div class='container-fluid'>
+			<div class="d-flex flex-row my-4">
+					<img src='https://kulik.spb.ru/static/img/polygon.png' class='pb-3 pe-3'>
+					<h5 class=''>Авторские экскурсии</h5>
+				</div>
+				<div class="d-flex flex-row my-4">
+					<img src='https://kulik.spb.ru/static/img/rectangle_orange.png' class='pb-3 pe-3'>
+					<h5 class=''>Научно-популярные лекции</h5>
+				</div>
+				<div class="d-flex flex-row my-4">
+					<img src='https://kulik.spb.ru/static/img/ellipse.png' class='pb-3 pe-3'>
+					<h5 class=''>Экспертиза</h5>
+				</div>
+
+		</div>
+	</div>
+<!-- MOBILE HEADER END -->
+
+
+
+<!-- MAIN CONTENT -->
+<div class="big_fields_text my-5">
+
+	<p class='sub_logo'>Андрей Кулик - петербургский историк, независимый исследователь, экскурсовод, лектор и просветитель, куратор выставочных проектов. 
+		
+	<p>Область его научных интересов - история повседневности рубежа XIX-XX веков, Первой и Второй мировых войн: </p>
+
+	<ul>
+		<li>Образы Первой и Второй мировых войн в кинематографе</li>
+		<li>История Курортного района Санкт-Петербурга: Сестрорецк, Зеленогорск</li>
+		<li>Блокада Ленинграда</li>
+		<li>Советско-финляндская война</li>
+		<li>История петербургского быта, городская среда рубежа XIX-XX веков</li>
+		<li>Архитектура модерна</li>
+		<li>Архитектура конструктивизма как фактор создания нового общественного строя в СССР</li>
+	</ul>
+
+</div>
+
+{% endblock %}
