@@ -24,7 +24,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'main.apps.MainConfig',
     'lection.apps.LectionConfig',
+    'tour.apps.TourConfig',
 
 ]
 

@@ -1,4 +1,6 @@
 way.txt
+
 ku/.env
 static/imgs/*
 static/bootstrap/*
+db.sqlite3

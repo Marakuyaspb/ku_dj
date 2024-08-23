@@ -3,16 +3,18 @@ from django.conf import settings
 from django.urls import path, include
 from django.contrib import admin
 
-from lection import views
-from lection import urls
+from main import views, urls
+from lection import views, urls
+from tour import views, urls
 
 admin.site.site_header = 'Система Централизованного Управления Контентом'
 
-handler404 = views.error_404_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('main.urls')),
     path('', include('lection.urls')),
+    path('', include('tour.urls')),
 ]
 
 

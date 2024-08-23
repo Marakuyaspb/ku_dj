@@ -3,9 +3,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 from . import views
 
-app_name = 'lection'
+app_name = 'tour'
 
 urlpatterns = [
-    path('lections/', views.lections, name = 'lections'),
-    path('lections/<int:id>/', views.the_lection, name='the_lection'),
+    path('tours/', views.tours, name = 'tours'),
+    path('tours/<int:id>/', views.the_tour, name='the_tour'),
 ]

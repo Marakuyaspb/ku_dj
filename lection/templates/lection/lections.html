@@ -1,4 +1,4 @@
-{% extends 'lection/base.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
 
 
@@ -46,10 +46,10 @@
 	</div>
 	<hr>
 
-	{% for el_le in lections %}
+	{% for lection in lections %}
 	<div class="big_fields_text my-3">
 		<ul>
-			<li>{{ el_le.lection_title }}</li>
+			<li>{{ lection.lection_title }}</li>
 		</ul>
 	</div>
 	{% endfor %}

@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +8,7 @@
 	<title>Петроградский краезнатец</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://kulik.spb.ru/static/style.css">
+		<link rel="stylesheet" href=" {% static 'css/style.css' %}">
 </head>
 <body>
 
@@ -14,8 +16,8 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   		<div class="container-fluid px-4">
 
-    		<a class="navbar-brand d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="{% url 'lection:index' %}"><img src="https://kulik.spb.ru/static/img/logo.png" class='img-fluid'></a>
-    		<a class="navbar-brand d-block d-md-none" href="{% url 'lection:index' %}"><img src="https://kulik.spb.ru/static/img/logo_mob.png" class='img-fluid'></a>
+    		<a class="navbar-brand d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="{% url 'main:index' %}"><img src="https://kulik.spb.ru/static/img/logo.png" class='img-fluid'></a>
+    		<a class="navbar-brand d-block d-md-none" href="{% url 'main:index' %}"><img src="https://kulik.spb.ru/static/img/logo_mob.png" class='img-fluid'></a>
 
     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       			<span class="navbar-toggler-icon"></span>
@@ -27,13 +29,13 @@
 		          		<a class="nav-link white_text" aria-current="page" href="{% url 'lection:lections' %}">Лекции</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link white_text" href="{% url 'lection:tours' %}">Экскурсии</a>
+		          		<a class="nav-link white_text" href="{% url 'tour:tours' %}">Экскурсии</a>
 		        	</li>
 		        	<li class="nav-item">
 		          		<a class="nav-link white_text" href="#">Статьи</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link white_text" href="{% url 'lection:contact' %}">Контакты</a>
+		          		<a class="nav-link white_text" href="{% url 'main:contact' %}">Контакты</a>
 		        	</li>
 		      </ul>
 		      <form class="d-flex">
@@ -62,7 +64,7 @@
 				<div class='col-md-3 pt-3'>
 					<a class="d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="https://kulik.spb.ru"><img src="https://kulik.spb.ru/static/img/logo.png" class='img-fluid'></a>
     			<a class="d-block d-md-none" href="https://kulik.spb.ru"><img src="https://kulik.spb.ru/static/img/logo_mob.png" class='img-fluid'></a>
-    			<p class="white_text pt-2 sub_logo"> Необычные экскурсии. Авторский взгляд.
+    			<p class="white_text pt-2 sub_logo">Необычные экскурсии. Авторский взгляд.
 
 				</div>
 
@@ -91,7 +93,7 @@
     <div class='pt-2 pb-2'>
     	<center>
     		<p class="white_text pt-2">Кулик © 2023</p>
-				<p class="white_text small_text ps-2"> Разработка сайта: <a href="https://vk.com/anna_boook" class='white_text'>Анна Букина</a>
+				<p class="white_text small_text ps-2"> Разработка сайта: <a href="https://coffeeinveins.ru/" class='white_text'>Анна Букина</a>
 			</center>
 		</div>
 	</div>
