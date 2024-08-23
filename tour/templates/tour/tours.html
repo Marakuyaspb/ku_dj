@@ -64,6 +64,7 @@
 
 
 
+		<div class='tours_container py-4'>
 
 		{% for the_tour in tours %}
 
@@ -76,13 +77,13 @@
 				<p class="card-text">{{ the_tour.questions|linebreaks }}</p>
 
 				<a href="{% url 'tour:the_tour' id=the_tour.tour_id %}" class="btn btn-primary">Подробнее</a>
-				<a href="#" class="btn btn-primary">Записаться сейчас</a>
 			</div>
 		</div>
 
 		{% endfor %}
+		</div>
 
-<br><br>
+
 </div>
 
 <script type="text/javascript" src="{% static 'js/tabs.js' %}"></script>

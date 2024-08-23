@@ -177,6 +177,9 @@ a {
 	color:#3b536a!important;
 }
 
+.blue_middle{
+	color:#657c93!important;
+}
 
 /* BOOTSTRUP CHANGED */
 
@@ -229,7 +232,7 @@ a:active {
 
 ul {
     list-style: none;
-    background-color: #212428;
+    background-color: #151414;
 }
 
 .tabs {
@@ -250,7 +253,7 @@ ul {
 }
 
 .tabs li {
-    background-color: #212327;
+    background-color: #151414;
     width: 33.33% ;
     height: 100%;
     display: flex;
@@ -267,9 +270,9 @@ ul {
 }
 
 .tabs li:hover {
-    background: linear-gradient(145deg, #1e2024, #23272b);
+    background: linear-gradient(145deg, #151414, #121b20)ы;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    color: #E4AF7D;
+    color: #657c93;
     position: relative;
     z-index: 1;
     border-radius: 10px;
@@ -278,8 +281,17 @@ ul {
 .active_choice_tab {
     background: linear-gradient(145deg, #1e2024, #23272b);
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    color: #E4AF7D !important;
+    color: #657c93 !important;
     position: relative;
     z-index: 1;
     border-radius: 10px;
+}
+
+.tours_container{
+	display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
 }
