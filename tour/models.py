@@ -39,12 +39,12 @@ class Tour(models.Model):
 	category = models.ForeignKey(Category,
 		related_name='tour_categories',
 		on_delete=models.CASCADE, verbose_name = 'Категория')
-	title_tour = models.CharField(verbose_name ='Название лекции', max_length=200)
+	title_tour = models.CharField(verbose_name ='Название экскурсии', max_length=200)
 	price_single = models.CharField(verbose_name ='Цена для одного', max_length=200, null=True, blank=True)
 	price_group = models.CharField(verbose_name ='Цена для группы', max_length=200, null=True, blank=True)
 	meet_point = models.CharField(verbose_name ='Точка сборки', max_length=200, null=True, blank=True)
 	duration = models.CharField(verbose_name ='Длительность', max_length=200, null=True, blank=True)
-	annotation_tour = models.TextField(verbose_name ='Анонс лекции')
+	annotation_tour = models.TextField(verbose_name ='Краткое описание экскурсии')
 	questions = models.TextField(verbose_name ='Вы узнаете ответы')
 
 	img_tour_main = models.ImageField(upload_to='lection/', null=True, blank=True, verbose_name = 'Фото в шапку страницы')
