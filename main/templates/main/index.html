@@ -4,59 +4,39 @@
 
 {% block content %}
 
-<!-- DESCTOP HEADER START -->
-	<div class='d-none d-md-block d-lg-block d-xl-block d-xxl-block'>
+<div class='wrap_cover'>
+	<img class='index_cover d-none d-lg-block d-xl-block d-xxl-block' src="{% static 'imgs/pages/lection.jpg' %}" >
+
+	<img class='index_cover img-fluid d-block d-lg-none' src="{% static 'imgs/pages/go_with_me.jpg' %}" >
+
+	<div class='head_index'>
 		<div class='row'>
-			<div class='col'>
-				<div class = 'main_lable'>
-					<h1 class='white_text very_big_h text-start'>АНДРЕЙ</h1>
-					<h1 class='white_text very_big_h text-start'>КУЛИК</h1>
+			<div class='col ms-2'>
+				<div class = 'pb-3'>
+					<h1 class='h1_index white_text text-start'>АНДРЕЙ</h1>
+					<h1 class='h1_index white_text text-start'>КУЛИК</h1>
 				</div>
 			</div>
 
-			<div class='col ms-5 main_lable'>
+			<div class='col ms-2'>
 				<div class="d-flex flex-row my-4">
 					<img src='https://kulik.spb.ru/static/img/polygon.png' class='pb-3 pe-3'>
-					<h3 class='white_text'>Авторские экскурсии</h3>
+					<h5 class='white_text'>Авторские экскурсии</h5>
 				</div>
 				<div class="d-flex flex-row my-4">
 					<img src='https://kulik.spb.ru/static/img/rectangle_orange.png' class='pb-3 pe-3'>
-					<h3 class='white_text'>Научно-популярные лекции</h3>
+					<h5 class='white_text'>Научно-популярные лекции</h5>
 				</div>
 				<div class="d-flex flex-row my-4">
 					<img src='https://kulik.spb.ru/static/img/ellipse.png' class='pb-3 pe-3'>
-					<h3 class='white_text'>Экспертиза</h3>
+					<h5 class='white_text'>Экспертиза</h5>
 				</div>
 			</div>
-		</div>
-		<img src="https://kulik.spb.ru/static/img/suprem_img/main_cover.jpg" class='main_cover'>
-	</div>
-<!-- DESCTOP HEADER END -->
+		</div> 
+	</div> 
 
-<!-- MOBILE HEADER START -->
-	<div class='d-block d-md-none'>
-		<center>
-		<h1 class='white_text main_title_mob'>АНДРЕЙ КУЛИК</h1>
-		</center>
-			<img src="https://kulik.spb.ru/static/img/suprem_img/main_cover_mob.jpg" class='main_cover_mob'>
-
-		<div class='container-fluid'>
-			<div class="d-flex flex-row my-4">
-					<img src='https://kulik.spb.ru/static/img/polygon.png' class='pb-3 pe-3'>
-					<h5 class=''>Авторские экскурсии</h5>
-				</div>
-				<div class="d-flex flex-row my-4">
-					<img src='https://kulik.spb.ru/static/img/rectangle_orange.png' class='pb-3 pe-3'>
-					<h5 class=''>Научно-популярные лекции</h5>
-				</div>
-				<div class="d-flex flex-row my-4">
-					<img src='https://kulik.spb.ru/static/img/ellipse.png' class='pb-3 pe-3'>
-					<h5 class=''>Экспертиза</h5>
-				</div>
-
-		</div>
-	</div>
-<!-- MOBILE HEADER END -->
+	
+</div>
 
 
 
@@ -65,17 +45,45 @@
 
 	<p class='sub_logo'>Андрей Кулик - петербургский историк, независимый исследователь, экскурсовод, лектор и просветитель, куратор выставочных проектов. 
 		
-	<p>Область его научных интересов - история повседневности рубежа XIX-XX веков, Первой и Второй мировых войн: </p>
+	<p class='sub_logo'>Область его научных интересов - история повседневности рубежа XIX-XX веков, Первой и Второй мировых войн. </p>
+	
 
-	<ul>
-		<li>Образы Первой и Второй мировых войн в кинематографе</li>
-		<li>История Курортного района Санкт-Петербурга: Сестрорецк, Зеленогорск</li>
-		<li>Блокада Ленинграда</li>
-		<li>Советско-финляндская война</li>
-		<li>История петербургского быта, городская среда рубежа XIX-XX веков</li>
-		<li>Архитектура модерна</li>
-		<li>Архитектура конструктивизма как фактор создания нового общественного строя в СССР</li>
-	</ul>
+	<div class='row py-3'>
+		<div class='col-md-4'>
+			<img class='img img-fluid py-3' src="{% static 'imgs/index/1.jpg' %}">
+		</div>
+		<div class='col-md-4'>
+			<img class='img img-fluid py-3' src="{% static 'imgs/index/aborigen.jpg' %}">
+		</div>
+		<div class='col-md-4'>
+			<img class='img img-fluid py-3' src="{% static 'imgs/index/3.jpg' %}">
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-6'>
+			<h2>Экскурсии в любую погоду</h2>
+			<h5>Погружение в атмосферу прошлого</h5>
+		</div>
+		<div class='col-md-6'>
+			<button class='mt-3'>Список экскурсий</button>
+		</div>
+	</div>
+
+	<div class='row py-3'>
+		<div class='col-md-4'>
+			<img class='img img-fluid py-3' src="{% static 'imgs/index/8.jpg' %}">
+		</div>
+		<div class='col-md-4'>
+			<img class='img img-fluid py-3' src="{% static 'imgs/index/5.jpg' %}">
+		</div>
+		<div class='col-md-4'>
+			<img class='img img-fluid py-3' src="{% static 'imgs/index/7.jpg' %}">
+		</div>
+	</div>
+
+
+
 
 </div>
 
