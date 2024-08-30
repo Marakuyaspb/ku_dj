@@ -17,11 +17,43 @@ h1, h2, h3, h4, h5 {
   font-style: normal;
 }
 p {
-	font-size: 1.1em;
+	font-size: 1em;
 }
-a {
-  text-decoration: none!important;
+
+
+.russo{
+	font-family: "Russo One", sans-serif;
+	margin-bottom: 0;
 }
+
+
+
+/* COLORS */
+
+.white_text{
+	color: #FFF5E9!important;
+}
+.sand_text{
+	color: #E4AF7D!important;
+}
+.yellow_text{
+	color: #F6C660!important;
+}
+.orange_text{
+	color: #E06030!important;
+}
+.red_text{
+	color: #E4150B!important;
+}
+
+.blue_deep{
+	color:#3b536a!important;
+}
+
+.blue_middle{
+	color:#657c93!important;
+}
+
 
 
 
@@ -33,8 +65,11 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 	}
-
-
+	.big_fields_text_all{
+		width: 76%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.wrap_cover{
 		position: relative;
 		height: 800px;
@@ -47,9 +82,9 @@ a {
 		margin-top: -18em;
 		width: 100%;
 		height: 120vh;
-    overflow-y: clip;
-    opacity: .9;
-    object-fit: cover;
+	    overflow-y: clip;
+	    opacity: .9;
+	    object-fit: cover;
 	}
 	.head_lozung{
 		font-size: 10em;
@@ -86,6 +121,11 @@ a {
 	}
 
 
+	.sub_logo{
+		font-weight: 500;
+	}
+
+
 }
 
 /*  PHONE  */
@@ -96,7 +136,11 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	.big_fields_text_all{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.wrap_cover{
 		position: relative;
@@ -159,26 +203,27 @@ a {
 		font-size: .9em;
 	}
 
+	.sub_logo{
+		font-weight: 400;
+		font-size: .9em;
+	}
+
 }
 
 .very_big_h{
 	font-size: 6em;
 	font-weight: 600;
 }
-.sub_logo{
-	font-weight: 600;
-}
+
 .small_text{
 	font-size: .8em;
 	font-weight: 100;
 }
 
-
 .main_lable{
 	padding-top: 8em;
 	padding-left: 14em;
 }
-
 
 
 .main_cover {
@@ -208,59 +253,9 @@ a {
 	font-weight: 500;
 }
 
-
-
-/* COLORS */
-
-.white_text{
-	color: #FFF5E9!important;
-}
-.sand_text{
-	color: #E4AF7D!important;
-}
-.yellow_text{
-	color: #F6C660!important;
-}
-.orange_text{
-	color: #E06030!important;
-}
-.red_text{
-	color: #E4150B!important;
-}
-
-.blue_deep{
-	color:#3b536a!important;
-}
-
-.blue_middle{
-	color:#657c93!important;
-}
-
-/* BOOTSTRUP CHANGED */
-
-.bg-dark{
-	background-color: #151414 !important;
-}
-.btn-outline-secondary{
-	background-color: #EFE7D4;
-}
-.btn-outline-secondary:hover{
-	background-color: #f7ebcd!important;
-	color: #565859!important;
-}
-a {
-	color: #E4150B; /* red */
-	text-decoration: none!important;
-}
-a:hover {
-	color: #E06030!important;
-}
-a:active {
-	color: #F6C660!important;
-}
-
-.navbar-light .navbar-toggler-icon{
-	background-image: url("https://kulik.spb.ru/static/img/burger.png");
+.icon_suprem{
+	height: 100%;
+	width: 36px;
 }
 
 
@@ -268,15 +263,16 @@ a:active {
 	width: 48px;
 	height: 100%!important;
 }
+
 .tour_btn{
 	background-color: #e2eaf2;
 	font-size: 1.1em;
 	border: none;
 	border-radius: 0px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  padding: .7em 1em;
-  margin: .4em;
-  width: 14em;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	padding: .7em 1em;
+	margin: .4em;
+	width: 14em;
 }
 .tour_btn:hover{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -342,11 +338,62 @@ ul {
     border-radius: 10px;
 }
 
-.tours_container{
+/*.tours_container{
 	display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+.tours_container {
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card {
+	margin-bottom: 16px;
+}
+
+/* BOOTSTRUP CHANGED */
+
+.bg-dark{
+	background-color: #151414 !important;
+}
+.btn-outline-secondary{
+	background-color: #EFE7D4;
+}
+.btn-outline-secondary:hover{
+	background-color: #f7ebcd!important;
+	color: #565859!important;
+}
+
+
+.btn-primary{
+	color: #fff;
+  background-color: #3b536a !important;
+  border-color: #3b536a !important;
+}
+.btn-primary:hover{
+	color: #fff!important;
+  background-color: #2a3f53!important;
+  border-color: #2a3f53 !important;
+}
+
+
+a {
+	color: #E4150B; /* red */
+	text-decoration: none!important;
+}
+a:hover {
+	color: #E06030!important;
+}
+a:active {
+	color: #F6C660!important;
+}
+
+.navbar-light .navbar-toggler-icon{
+	background-image: url("https://kulik.spb.ru/static/img/burger.png");
 }

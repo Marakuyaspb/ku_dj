@@ -3,12 +3,16 @@
 
 
 {% block content %}
-	<img src='{{ lection.img }}'>
 
-	<h1 class='lection_h1'>{{ lection.title }}</h1>
+	<div class='wrap_cover'>
+		<img class='head_cover' src="{{ the_lection.img.url }}">
+		<h2 class="head_lozung">{{ the_lection.title }}</h2>
+	</div>
 
-	<p>{{ lection.annotation }}</p>
+	<p>{{ the_lection.annotation|linebreaks }}</p>
+	<p class="">{{ the_lection.questions|linebreaks }}</p>
 
+	<a href="#" class="my-2 me-2 btn btn-primary">Посмотреть актуальное расписание</a>
 
 {% endblock %}
 

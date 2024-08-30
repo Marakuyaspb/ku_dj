@@ -29,16 +29,16 @@
 
 			<h3 class='pt-4 pb-3'>Будут - необычные маршруты, внимание к деталям, погружение в атмосферу Петербурга столетней давности</h3>
 			<div class='row'>
-				<div class='col-md-6'>
+				<div class='col-md-7'>
 					<p class='pt-2'>Проходные дворы, парадные, витражи... Внезапно - до сих пор работающий дверной звонок, которому более 120 лет. 
 					<p>Поворачиваем за угол и - парадоксальный вопрос, над которым можно поломать голову. Андрей достает из рюкзака подлинную дореволюционную открытку: так этот перекрёсток выглядел 100 лет назад, мы сейчас в той же точке, с которой снимал фотограф. </p>
 
 					<p>На экскурсиях Андрея Кулика интересно не только гостям города, но и петербуржцам с полувековым стажем.</p>
 
-					<h3 class='pt-3'>Более 20 уникальных маршрутов!</h3>
+					<h3 class='pt-3'>Более 30 уникальных маршрутов!</h3>
 					
 				</div>
-				<div class='col-md-6'>
+				<div class='col-md-5'>
 					<img class='img img-fluid pb-3' src="{% static 'imgs/people/tour_autmn.jpg' %}">
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 			
 			
 
-		<h1 class='pt-3'>Пешеходные экскурсии по Санкт-Петербургу и пригородам</h1>
+		<h1 class='pt-4'>Пешеходные экскурсии по Санкт-Петербургу и пригородам</h1>
 		
 		<center>
 			<form method="get">
@@ -66,25 +66,40 @@
 
 		<div class='tours_container py-4'>
 
-		{% for the_tour in tours %}
+			{% for the_tour in tours %}
 
-		<div class="card py-2" style="width: 22em;">
-			<img src="{{ the_tour.img_tour_main.url }}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h3 class="card-title blue_deep">{{ the_tour.title_tour }}</h3>
-				<hr>
-				<h5>На экскурсии мы узнаем:</h5>
-				<p class="card-text">{{ the_tour.questions|linebreaks }}</p>
+			<div class="card py-2" style="width: 20em;">
+				<img src="{{ the_tour.img_tour_main.url }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h3 class="card-title blue_deep">{{ the_tour.title_tour }}</h3>
+					<hr>
+					<h5>На экскурсии мы узнаем:</h5>
+					<p class="card-text">{{ the_tour.questions|linebreaks }}</p>
 
-				<a href="{% url 'tour:the_tour' id=the_tour.tour_id %}" class="btn btn-primary">Подробнее</a>
+					<a href="{% url 'tour:the_tour' id=the_tour.tour_id %}" class="btn btn-primary">Подробнее</a>
+				</div>
 			</div>
-		</div>
 
-		{% endfor %}
+			{% endfor %}
 		</div>
 
 
 </div>
 
 <script type="text/javascript" src="{% static 'js/tabs.js' %}"></script>
+
+<script>
+    // Initialize Masonry after all images have loaded
+    window.onload = function() {
+        var elem = document.querySelector('.tours_container');
+        var msnry = new Masonry(elem, {
+            itemSelector: '.card',
+            columnWidth: '.card', // Use the card itself as the column width
+            percentPosition: true,
+            gutter: 20 // Adjust gutter as needed
+        });
+    };
+</script>
+
+
 {% endblock %}
