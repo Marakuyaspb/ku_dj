@@ -1,0 +1,77 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style type="text/css">
+	.qoute{
+		margin: 0 0 -.8em 0;
+		padding: 0;
+		font-size: 4em;
+		color: #7a95b1;
+	}
+
+	@media (min-width: 811px){
+		.press_card{
+			width: 46%;
+		}
+	}
+	@media (max-width: 810px){
+		.press_card{
+			width: 90%;
+		}
+	}
+</style>
+
+
+<div class="big_fields_text mt-4">
+
+	<h2>Публикации о деятельности Андрея Кулика</h2>
+
+	<div class='tours_container py-4'>
+
+		{% for publication in publications %}
+
+			<div class="press_card card py-2">
+				<img src="{{ publication.screen_1.url }}" class="card-img-top" alt="...">
+
+				<div class="card-body">
+					<h3 class="card-title blue_deep">{{ publication.title }}</h3>
+					<hr>
+					<p class='blue_deep'>{{ publication.time }}</p>
+					<h2 class='qoute'>‘‘</h2>
+					<div class='mx-3'>
+						<p class="card-text">{{ publication.press_annotation|linebreaks }}</p>
+					</div>
+
+					<center>
+						<a href="{{ publication.link }}" class="btn btn-success mt-3">Прочесть в источнике</a>
+					</center>
+					
+				</div>
+
+			</div>
+
+		{% endfor %}
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="{% static 'js/tabs.js' %}"></script>
+
+<script>
+    window.onload = function() {
+        var elem = document.querySelector('.tours_container');
+        var msnry = new Masonry(elem, {
+            itemSelector: '.card',
+            columnWidth: '.card',
+            percentPosition: true,
+            gutter: 20
+        });
+    };
+</script>
+
+
+{% endblock %}

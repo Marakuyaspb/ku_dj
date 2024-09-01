@@ -1,19 +1,20 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-
 {% block content %}
 
 	<div class='wrap_cover'>
-		<img class='head_cover' src="{{ the_lection.img.url }}">
-		<h2 class="head_lozung">{{ the_lection.title }}</h2>
+		<img class='head_cover head_lection_cover' src="{{ the_lection.img_lection.url }}">
+		<h2 class="head_lection_title">{{ the_lection.title }}</h2>
 	</div>
 
+<div class="big_fields_text mt-2 mb-5">
 	<p>{{ the_lection.annotation|linebreaks }}</p>
+	<h4 class='mt-3 blue_deep'>На лекции мы узнаем:</h4>
 	<p class="">{{ the_lection.questions|linebreaks }}</p>
 
-	<a href="#" class="my-2 me-2 btn btn-primary">Посмотреть актуальное расписание</a>
-
+	<center><a href="#" class="mt-3 px-4 btn btn-success">Посмотреть расписание лекций</a></center>
+</div>
 {% endblock %}
 
 

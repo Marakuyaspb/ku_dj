@@ -5,97 +5,107 @@
 
 {% block content %}
 
-	<div class='wrap_cover'>
-		<img class='head_cover' src="{% static 'imgs/pages/lection_retro.jpg' %}">
-		<h1 class="head_lozung">ВСЕ - НА ЛЕКЦИИ <span>КУЛИКА!</span></h1>
+<div class='wrap_cover'>
+	<img class='head_cover' src="{% static 'imgs/pages/lection_retro.jpg' %}">
+
+	<div class="head_lozung_wrap">
+		<h1 class="head_lozung_lection ">ВСЕ - НА ЛЕКЦИИ</h1>
+		<h1 class='head_lozung_lection '>КУЛИКА!</h1>
+	</div>
+</div>
+
+<div class="big_fields_text mt-4">
+
+	<h1 class="mb-4">Научно-популярные лекции</h1>
+
+	<p>Андрей Кулик читает открытые научно-популярные лекции с 2018 года. В числе площадок, на которых за эти 5 лет проходили лекции: библиотеки Санкт-Петербурга, Исторический парк «Россия — моя история», Военно-медицинский музей, киностудия «Лендок», Государственный музей городской скульптуры.</p>
+
+<!-- 	<div class='container-fluid'>
+		<div class='row mt-3 mb-2'>
+			<div class='col-md-4'>
+				<h2 class='very_big_h blue_deep'>< 30</h2>
+				<p class='we_500'>научно-популярных лекций
+				<img src="">
+			</div>
+			<div class='col-md-4'>
+				<h2 class='very_big_h blue_deep'>< 100</h2>
+				<p class='we_500'>проведённых мероприятий
+				<img src="">
+			</div>
+			<div class='col-md-4'>
+				<h2 class='very_big_h blue_deep'>< 20</h2>
+				<p class='we_500'>площадок-партнёров
+				<img src="">
+			</div>
+		</div>
+	</div> -->
+
+
+	<div class='row py-3'>
+
+		<div class='col-md-6'>
+			<h2 class='mt-5'>Когда ближайшая лекция?</h2>			
+			<p>Скоро! Вероятнее всего, на следующнй неделе. 
+			<p>Актуальные анонсы бесплатных мероприятий всегда можно найти в официальном сообществе ВКонтакте: <b>"Андрей Кулик: лекции, экскурсии СПб"</b>.</p>
+			<a href="https://vk.com/historia_militum"><button class='mt-3 btn btn-success'>Перейти в группу ВК</button></a>			
+		</div>
+			
+		<div class='col-md-6'>
+			<div class='row'>
+				<div class='col-md-6'>
+					<img class='img img-fluid py-3' src="{% static 'imgs/pages/lection_bear.jpg' %}">
+				</div>
+				<div class='col-md-6'>
+					<img class='img img-fluid py-3' src="{% static 'imgs/pages/lection__.jpg' %}">
+				</div>
+			</div>	
+			
+		</div>
 	</div>
 
-	<div class="big_fields_text mt-4">
 
-		<h1 class="mb-4">Научно-популярные лекции</h1>
+	<div class='row py-3'>
 
-		<p>Андрей Кулик читает открытые научно-популярные лекции с 2018 года. В числе площадок, на которых за эти 5 лет проходили лекции: библиотеки Санкт-Петербурга, Исторический парк «Россия — моя история», Военно-медицинский музей, киностудия «Лендок», Государственный музей городской скульптуры.</p>
-
-		<div class='container-fluid'>
-			<div class='row mt-3 mb-2'>
-				<div class='col-md-4'>
-					<h2 class='very_big_h blue_deep'>< 30</h2>
-					<p class='we_500'>научно-популярных лекций
-					<img src="">
+		<div class='col-md-6'>
+			<div class='row'>
+				<div class='col-md-6'>
+					<img class='img img-fluid py-3' src="{% static 'imgs/pages/show.jpg' %}">
 				</div>
-				<div class='col-md-4'>
-					<h2 class='very_big_h blue_deep'>< 100</h2>
-					<p class='we_500'>проведённых мероприятий
-					<img src="">
-				</div>
-				<div class='col-md-4'>
-					<h2 class='very_big_h blue_deep'>< 20</h2>
-					<p class='we_500'>площадок-партнёров
-					<img src="">
+				<div class='col-md-6'>
+					<img class='img img-fluid py-3' src="{% static 'imgs/pages/lection_touch.jpg' %}">
 				</div>
 			</div>
 		</div>
-
-
-		<div class='row pb-3'>
-			<div class='col-md-3'>
-				<img class='img img-fluid py-3' src="{% static 'imgs/pages/lection_bear.jpg' %}">
-			</div>
-			<div class='col-md-3'>
-				<img class='img img-fluid py-3' src="{% static 'imgs/pages/lection__.jpg' %}">
-			</div>	
-
-			<div class='col-md-3'>
-				<img class='img img-fluid py-3' src="{% static 'imgs/pages/lection_touch.jpg' %}">
-			</div>
 			
-			<div class='col-md-3'>
-				<img class='img img-fluid py-3' src="{% static 'imgs/pages/show.jpg' %}">
-			</div>
+		<div class='col-md-6'>
+			<h2 class='mt-5'>Лекции по заказу</h2>
 
-		</div>
-
-
-		<div class='row my-3'>
-			<div class='col-md-6'>
-				<h2>Когда ближайшая лекция?</h2>
-
-				<div class='row my-3'>
-					<div class='col-sm-6'>
-						<p>Актуальные анонсы бесплатных мероприятий можно найти в официальном сообществе ВКонтакте: <b>"Андрей Кулик: лекции, экскурсии СПб"</b>.</p>
-					</div>
-					<div class='col-sm-6'>
-						<a href="https://vk.com/historia_militum"><button class='mt-3 btn btn-primary'>Перейти в группу ВК</button></a>
-					</div>
+			<div class='row my-3'>
+				<div class='col-md-6'>
+					<p>Любую лекцию можно провести на вашей площадке в удобную вам дату.</p>
+					<p>Это может быть тематический классный час, приуроченный к памятной дате, или научпоп вечер в кафе.</p>
 				</div>
-
-			</div>
-
-			<div class='col-md-6'>
-
-				<h2>Платные лекции</h2>
-
-				<div class='row my-3'>
-					<div class='col-sm-6'>
-						<p>Любую лекцию можно провести на вашей площадке в удобную вам дату.</p>
-						<p>Это может быть тематический классный час, приуроченный к памятной дате, или научпоп вечер в кафе.</p>
-					</div>
-					<div class='col-sm-6'>
-
-						<p>Стоимость лекции на заказ — от 5000 р. 						</p>
-						<p><a href="https://wa.me/79531788015"><button class=' btn btn-success'>Написать в WatsApp</button> </a>
-					</div>
-				</div>	
-			</div>
+				<div class='col-md-6'>
+					<p>Стоимость лекции на заказ — от 5000 р.</p>
+					<p><a href="https://wa.me/79531788015"><button class=' btn btn-primary'>Написать в WatsApp</button> </a>
+				</div>
+			</div>	
+			
 		</div>
+	</div>
 
 
-		<div class='tours_container py-4'>
 
-			{% for the_lection in lections %}
 
-			<div class="card py-2" style="width: 22em;">
-				<img src="{{ the_lection.img }}" class="card-img-top" alt="...">
+
+	<div class='tours_container py-4'>
+
+		{% for the_lection in lections %}
+
+		<a href="{% url 'lection:the_lection' id=the_lection.lection_id %}">
+			<div class="card py-2" style="width: 20em;">
+				<img src="{{ the_lection.img_lection.url }}" class="card-img-top" alt="...">
+
 				<div class="card-body">
 					<h3 class="card-title blue_deep">{{ the_lection.title }}</h3>
 					<hr>
@@ -104,26 +114,27 @@
 
 					<a href="{% url 'lection:the_lection' id=the_lection.lection_id %}" class="btn btn-primary">Подробнее</a>
 				</div>
+
 			</div>
-
-			{% endfor %}
-		</div>
-
+		</a>
+		{% endfor %}
 	</div>
 
+</div>
 
-	<script>
-    // Initialize Masonry after all images have loaded
-    window.onload = function() {
-        var elem = document.querySelector('.tours_container');
-        var msnry = new Masonry(elem, {
-            itemSelector: '.card',
-            columnWidth: '.card', // Use the card itself as the column width
-            percentPosition: true,
-            gutter: 20 // Adjust gutter as needed
-        });
-    };
-	</script>
+
+<script>
+// Initialize Masonry after all images have loaded
+window.onload = function() {
+    var elem = document.querySelector('.tours_container');
+    var msnry = new Masonry(elem, {
+        itemSelector: '.card',
+        columnWidth: '.card', // Use the card itself as the column width
+        percentPosition: true,
+        gutter: 20 // Adjust gutter as needed
+    });
+};
+</script>
 
 {% endblock %}
 

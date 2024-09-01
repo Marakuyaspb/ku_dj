@@ -20,6 +20,9 @@ p {
 	font-size: 1em;
 }
 
+a {
+	text-decoration: none!important;
+}
 
 .russo{
 	font-family: "Russo One", sans-serif;
@@ -33,6 +36,9 @@ p {
 .white_text{
 	color: #FFF5E9!important;
 }
+.black_text{
+	color: #000!important;
+}
 .sand_text{
 	color: #E4AF7D!important;
 }
@@ -45,6 +51,7 @@ p {
 .red_text{
 	color: #E4150B!important;
 }
+
 
 .blue_deep{
 	color:#3b536a!important;
@@ -95,6 +102,29 @@ p {
 		z-index: 5;
 		opacity: .8;
 	}
+
+
+
+	.head_lozung_wrap{
+		padding: 0 0 0 5em;
+		margin-top: -34em;
+		position: absolute;
+		z-index: 5;
+	}
+	.head_lozung_lection{
+		font-size: 10em;
+		color: #fff;
+		opacity: .92;
+	}
+
+
+	.head_lection_title{
+		font-size: 4em;
+		color: #fff;
+		opacity: .92;
+		margin: -8em 0 0 2em;
+	}
+
 
 	.head_index{
 		color: #fff;
@@ -162,7 +192,9 @@ p {
 		opacity: .7;
 		object-fit: cover;
 	}
-
+	.head_lection_cover{
+		opacity: 1;
+	}
 	.head_lozung{
 		font-size: 3.2em;
 		color: #fff;
@@ -171,6 +203,27 @@ p {
 		z-index: 5;
 		/*margin: 5em 0 2em 0;*/
 		opacity: .8;
+	}
+
+
+	.head_lozung_wrap{
+		padding: 0 0 0 1em;
+		margin-top: 12em;
+		position: absolute;
+		z-index: 5;
+	}
+	.head_lozung_lection{
+		font-size: 4em;
+		color: #fff;
+		opacity: .92;
+		padding: 0 0 0 .4em;
+	}
+
+	.head_lection_title{
+		font-size: 2.2em;
+		color: #fff;
+		opacity: .92;
+		padding: 2em .4em 0 .4em;
 	}
 
 	.head_index{
@@ -356,8 +409,22 @@ ul {
 .card {
 	margin-bottom: 16px;
 }
+.card-title {
+  font-size: 1.3em;
+}
+
+.card-sub-title{
+	font-size: 1.14em;
+}
+
 
 /* BOOTSTRUP CHANGED */
+
+
+.card-body a{
+	color:#000!important;
+}
+
 
 .bg-dark{
 	background-color: #151414 !important;
@@ -371,26 +438,36 @@ ul {
 }
 
 
+.btn-success{
+	background-color:#7a95b1!important;
+	border-color:#7a95b1!important;
+	color: #000;
+}
+.btn-success:hover{	
+	background-color:#657c93 !important;
+	border-color:#657c93 !important;
+	color: #000;
+}
+
+
+
 .btn-primary{
-	color: #fff;
-  background-color: #3b536a !important;
-  border-color: #3b536a !important;
+	background-color: #E4AF7D !important;
+	border-color: #E4AF7D !important;
+	color: #000;
 }
 .btn-primary:hover{
-	color: #fff!important;
-  background-color: #2a3f53!important;
-  border-color: #2a3f53 !important;
+	background-color: #D7975A!important;
+	border-color: #D7975A !important;
+	color: #000;
 }
 
 
-a {
-	color: #E4150B; /* red */
-	text-decoration: none!important;
+
+.nav-link:hover {
+	color: #E4AF7D!important;
 }
-a:hover {
-	color: #E06030!important;
-}
-a:active {
+.nav-link:active {
 	color: #F6C660!important;
 }
 

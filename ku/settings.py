@@ -26,6 +26,7 @@ INSTALLED_APPS = [
 
     'main.apps.MainConfig',
     'lection.apps.LectionConfig',
+    'press.apps.PressConfig',
     'tour.apps.TourConfig',
 
 ]

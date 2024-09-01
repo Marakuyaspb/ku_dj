@@ -13,7 +13,7 @@ def lections(request):
 
 def the_lection(request, category=None, id=None):
 	if id:
-		the_lection = get_object_or_404(Lection, id=id)
+		the_lection = get_object_or_404(Lection, lection_id=id)
 		similar_lections = Lection.objects.filter(category=the_lection.category)
 
 	context = {

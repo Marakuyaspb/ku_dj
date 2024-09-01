@@ -5,6 +5,7 @@ from django.contrib import admin
 
 from main import views, urls
 from lection import views, urls
+from press import views, urls
 from tour import views, urls
 
 admin.site.site_header = 'Система Централизованного Управления Контентом'
@@ -14,6 +15,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('', include('lection.urls')),
+    path('', include('press.urls')),
     path('', include('tour.urls')),
 ]
 

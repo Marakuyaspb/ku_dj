@@ -42,7 +42,7 @@ class Lection(models.Model):
 	title = models.CharField(verbose_name ='Название лекции', max_length=200)
 	annotation = models.TextField(verbose_name ='Анонс лекции')
 	questions = models.TextField(verbose_name ='Вы узнаете ответы', default='why?')
-	img = models.ImageField(upload_to='lection/', null=True, blank=True, verbose_name = 'Фото в шапку страницы')
+	img_lection = models.ImageField(upload_to='lection/', null=True, blank=True, verbose_name = 'Фото в шапку страницы')
 	tags = models.ManyToManyField(Tag, related_name='lectures', blank=True)
 
 	class Meta:
