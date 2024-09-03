@@ -4,7 +4,7 @@ from .models import Publication
 
 
 def publications(request):
-	publications = Publication.objects.all
+	publications = Publication.objects.all().order_by('-time')
 	context = {
 		'publications':publications,
 	}

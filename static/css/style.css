@@ -36,31 +36,65 @@ a {
 .white_text{
 	color: #FFF5E9!important;
 }
+.white_bg{
+	background-color: #FFF5E9!important;
+}
+
 .black_text{
 	color: #000!important;
 }
+.black_bg{
+	background-color: #000!important;
+}
+
 .sand_text{
 	color: #E4AF7D!important;
 }
+.sand_bg{
+	background-color: #E4AF7D!important;
+}
+
 .yellow_text{
 	color: #F6C660!important;
 }
+.yellow_bg{
+	background-color: #F6C660!important;
+}
+
 .orange_text{
 	color: #E06030!important;
 }
+.orange_bg{
+	background-color: #E06030!important;
+}
+
 .red_text{
 	color: #E4150B!important;
 }
-
+.red_bg{
+	background-color: #E4150B!important;
+}
 
 .blue_deep{
 	color:#3b536a!important;
+}
+.blue_bg{
+	background-color:#3b536a!important;
 }
 
 .blue_middle{
 	color:#657c93!important;
 }
+.blue_middle_bg{
+	background-color:#657c93!important;
+}
 
+.pink_text{
+	color:#f2e3e3!important;
+}
+.pink_bg{
+	background-color:#f2e3e3!important;
+}
 
 
 

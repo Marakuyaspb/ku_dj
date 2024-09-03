@@ -3,6 +3,7 @@ from django.conf import settings
 from django.urls import path, include
 from django.contrib import admin
 
+from blog import views, urls
 from main import views, urls
 from lection import views, urls
 from press import views, urls
@@ -13,6 +14,7 @@ admin.site.site_header = 'Система Централизованного Уп
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
     path('', include('main.urls')),
     path('', include('lection.urls')),
     path('', include('press.urls')),
