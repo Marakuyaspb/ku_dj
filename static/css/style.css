@@ -74,7 +74,12 @@ a {
 .red_bg{
 	background-color: #E4150B!important;
 }
-
+.blue_very_light{
+	color:#ebf1fd;
+}
+.blue_very_light_bg{
+	background-color:#ebf1fd;
+}
 .blue_deep{
 	color:#3b536a!important;
 }

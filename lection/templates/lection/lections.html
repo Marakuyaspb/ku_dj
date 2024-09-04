@@ -4,6 +4,14 @@
 
 {% block content %}
 
+<style type="text/css">
+	.card{
+		background: #fafbea;
+	}
+</style>
+
+
+
 <div class='wrap_cover'>
 	<img class='head_cover' src="{% static 'imgs/pages/lection_retro.jpg' %}">
 
@@ -18,26 +26,6 @@
 	<h1 class="mb-4">Научно-популярные лекции</h1>
 
 	<p>Андрей Кулик читает открытые научно-популярные лекции с 2018 года. В числе площадок, на которых за эти 5 лет проходили лекции: библиотеки Санкт-Петербурга, Исторический парк «Россия — моя история», Военно-медицинский музей, киностудия «Лендок», Государственный музей городской скульптуры.</p>
-
-<!-- 	<div class='container-fluid'>
-		<div class='row mt-3 mb-2'>
-			<div class='col-md-4'>
-				<h2 class='very_big_h blue_deep'>< 30</h2>
-				<p class='we_500'>научно-популярных лекций
-				<img src="">
-			</div>
-			<div class='col-md-4'>
-				<h2 class='very_big_h blue_deep'>< 100</h2>
-				<p class='we_500'>проведённых мероприятий
-				<img src="">
-			</div>
-			<div class='col-md-4'>
-				<h2 class='very_big_h blue_deep'>< 20</h2>
-				<p class='we_500'>площадок-партнёров
-				<img src="">
-			</div>
-		</div>
-	</div> -->
 
 
 	<div class='row py-3'>
@@ -102,7 +90,7 @@
 		{% for the_lection in lections %}
 
 		<a href="{% url 'lection:the_lection' id=the_lection.lection_id %}">
-			<div class="card py-2" style="width: 20em;">
+			<div class="card pb-1" style="width: 20em;">
 				<img src="{{ the_lection.img_lection.url }}" class="card-img-top" alt="...">
 
 				<div class="card-body">
@@ -111,7 +99,7 @@
 					<h5>На лекции мы узнаем:</h5>
 					<p class="card-text">{{ the_lection.questions|linebreaks }}</p>
 
-					<a href="{% url 'lection:the_lection' id=the_lection.lection_id %}" class="btn btn-primary">Подробнее</a>
+					<center><a href="{% url 'lection:the_lection' id=the_lection.lection_id %}" class="btn btn-primary">Подробнее</a></center>
 				</div>
 
 			</div>

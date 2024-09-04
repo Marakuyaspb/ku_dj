@@ -71,6 +71,19 @@ class Article(models.Model):
 		latest_articles = Article.objects.order_by('-updated_at')[:3]
 		return render(request, 'latest_articles.html', {'_articles': _articles})
 
+	def latest_10_articles(request):
+		latest_articles = Article.objects.order_by('-updated_at')[:10]
+		return render(request, 'latest_articles10.html', {'_articles10': _articles10})
+
+
+	def first_sentence(self):
+		sentences = self.text.split('. ')
+
+		if len(sentences) > 1:
+		    return '. '.join(sentences[:1]) + '.'
+		elif sentences:
+		    return sentences[0] + '.'
+		return ''
 
 	def first_two_sentences(self):
 		sentences = self.text.split('. ')

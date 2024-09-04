@@ -4,11 +4,13 @@
 
 {% block content %}
 
+
+
 <div class='full_width'>
 
 	<div class='row'>
 
-		<div class='col-md-9 mb-2'>
+		<div class='col-md-4 mb-2'>
 
 		{% if the_article.img_article_1 %}
 			<div id="carouselExampleInterval" class="carousel slide mb-2" data-bs-ride="carousel">
@@ -47,23 +49,25 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
-
 			</div>
-			{% endif %}
+		{% endif %}
 
-			<div class="big_fields_text mt-2 mb-5">
-				<h2>{{ the_article.title }}</h2>
-				<p>{{ the_article.text|linebreaks }}</p>
-			</div>
 
 		</div>
+		<div class='col-md-5 mb-2'>
+			<div class="px-5 mt-5 mb-52">
+				<h2 class='blue_deep'>{{ the_article.title }}</h2>
+				<p class='pt-2 pb-3 we_500'>Андрей Кулик</p>
+				<p>{{ the_article.text|linebreaks }}</p>
+			</div>
+		</div>
 
-		<div class='col-md-3 pink_bg'>
+		<div class='col-md-3 blue_very_light_bg'>
 
 			<div class='big_fields_text p-2'>
 				<h4 class='my-5'>Другие статьи</h4>
 				{% for the_article in articles %}
-					<a clas='' href="{% url 'blog:the_article' id=the_article.article_id %}"><p class='we_500 blue_deep'>{{ the_article.title }}</p></a>
+					<a clas='black_text' href="{% url 'blog:the_article' id=the_article.article_id %}"><p class='we_500 black_text'>{{ the_article.title }}</p></a>
 				{% endfor%}
 			</div>
 			

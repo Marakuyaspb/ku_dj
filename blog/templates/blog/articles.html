@@ -4,6 +4,41 @@
 
 {% block content %}
 
+
+<style type="text/css">
+
+	.last_articles{
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+		background: rgba(0, 0, 0, .8);
+	}
+	.last_articles img {
+		height: auto; 
+		width: 100%; 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: .5;
+	}
+	.carousel-caption{
+		text-align: left;
+	}
+	.card{
+		background: #ebf1fd;
+	}
+</style>
+
+
+<div class="big_fields_text my-3">
+	<center>
+		<row class='we_500'><p>Истории людей | Истории зверей | Пешком по городу | Пешком вокруг города</row>
+	</center>
+</div>
+
+
 <div class='full_width'>
 
 	<div class='row'>
@@ -15,12 +50,15 @@
 					{% for latest_articles in articles %}
 
 					<div class="carousel-item" data-bs-interval="3000">
+						<div class='last_articles'>
 
-						<img src="{{ latest_articles.img_article.url }}" class="d-block w-100" alt="...">
-						<div class='carousel-caption'>
-							<h2>{{ latest_articles.title }}</h2>
-							<p class="">{{ the_article.first_two_sentences }}</p>
+							<img src="{{ latest_articles.img_article.url }}" class="d-block " alt="...">
+							<div class='carousel-caption'>
+								<h2>{{ latest_articles.title }}</h2>
+								<p class="">{{ latest_articles.first_sentence }}..</p>
+							</div>
 						</div>
+
 
 					</div>
 
@@ -46,7 +84,8 @@
 
 		</div>
 
-		<div class='col-md-4'>
+		<div class='col-md-4 pt-2 px-5'>
+
 
 			<div class='py-2'>
 				<h2 class=''>Винни-Пух и Первая мировая война</h2>
@@ -62,32 +101,44 @@
 	</div>
 </div> 
 
+<div class="big_fields_text my-3">
+	<div class='tours_container'>
 
-<div class='tours_container py-4'>
+		{% for the_article in articles %}
 
-	{% for the_article in articles %}
+		<a href="{% url 'blog:the_article' id=the_article.article_id %}">
+			<div class="card pb-1" style="width: 20em;">
+				<img src="{{ the_article.img_article.url }}" class="card-img-top" alt="...">
 
-	<a href="{% url 'blog:the_article' id=the_article.article_id %}">
-		<div class="card py-2" style="width: 20em;">
-			<img src="{{ the_article.img_article.url }}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h3 class="card-title blue_deep">{{ the_article.title }}</h3>
+					<p class="card-text my-3">{{ the_article.first_two_sentences }}..</p>
 
-			<div class="card-body">
-				<h3 class="card-title blue_deep">{{ the_article.title }}</h3>
-				<hr>
-				<h5>На лекции мы узнаем:</h5>
-				<p class="card-text">{{ the_article.first_two_sentences }}</p>
+					<center><a href="{% url 'blog:the_article' id=the_article.article_id %}" class="btn btn-success">Читать дальше</a></center>
+				</div>
 
-				<a href="{% url 'blog:the_article' id=the_article.article_id %}" class="btn btn-primary">Подробнее</a>
 			</div>
+		</a>
 
-		</div>
-	</a>
-
-	{% endfor %}
-
+		{% endfor %}
+	</div>
 </div>
 
 
 <script type="text/javascript" src='{% static "js/activate_carousel.js" %}'></script>
+
+<script>
+// Initialize Masonry after all images have loaded
+window.onload = function() {
+    var elem = document.querySelector('.tours_container');
+    var msnry = new Masonry(elem, {
+        itemSelector: '.card',
+        columnWidth: '.card', // Use the card itself as the column width
+        percentPosition: true,
+        gutter: 20 // Adjust gutter as needed
+    });
+};
+</script>
+
 
 {% endblock %}

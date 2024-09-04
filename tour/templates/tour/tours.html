@@ -3,6 +3,9 @@
 
 
 {% block content %}
+
+
+
 <div class='wrap_cover'>
 	<img class='head_cover' src="{% static 'imgs/people/people.jpg' %}">
 	<h1 class="head_lozung">ВСЕ - НА ЭКСКУРСИИ КУЛИКА!</h1>
@@ -63,7 +66,7 @@
 		{% for the_tour in tours %}
 
 		<a href="{% url 'tour:the_tour' id=the_tour.tour_id %}">
-			<div class="card py-2" style="width: 20em;">
+			<div class="card pb-1" style="width: 20em;">
 				<img src="{{ the_tour.img_tour_main.url }}" class="card-img-top" alt="...">
 				<div class="card-body">
 					<h3 class="card-title blue_deep">{{ the_tour.title_tour }}</h3>
@@ -71,7 +74,7 @@
 					<h5 class='card-sub-title'>На экскурсии мы узнаем:</h5>
 					<p class="card-text">{{ the_tour.questions|linebreaks }}</p>
 
-					<a href="{% url 'tour:the_tour' id=the_tour.tour_id %}" class="btn btn-primary">Подробнее</a>
+					<center><a href="{% url 'tour:the_tour' id=the_tour.tour_id %}" class="btn btn-primary">Подробнее</a></center>
 				</div>
 			</div>
 		</a>
